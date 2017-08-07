@@ -1,3 +1,5 @@
-export default function tempLate (alpha: mixed): mixed {
-  return alpha
+export default function append (left: any): Function {
+  return function appendLeft (right: Array<any>): Array<any> {
+    return [...right, left]
+  }
 }
