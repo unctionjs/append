@@ -1,7 +1,7 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
 
-import always from "./source"
+import append from "./source"
 
 test(({same, end}) => {
   same(append("a")(["b"]), ["b", "a"])
