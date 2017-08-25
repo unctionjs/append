@@ -54,5 +54,8 @@
     ],
     "sourceMap": false,
     "instrument": false
+  },
+  "dependencies": {
+    "@unction/type": "2.0.0"
   }
 }

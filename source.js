@@ -1,5 +1,19 @@
-export default function append (left: any): Function {
-  return function appendLeft (right: Array<any>): Array<any> {
-    return [...right, left]
+/* eslint-disable no-extra-parens, no-unused-expressions */
+
+import type from "@unction/type"
+
+export default function append (value: any): Function {
+  return function appendLeft (orderedList: any): any {
+    switch (type(orderedList)) {
+      case "String": {
+        return `${orderedList}${value}`
+      }
+      case "Array": {
+        return [...orderedList, value]
+      }
+      default: {
+        throw new Error(`append doesn't know how to deal with ${type(orderedList)}`)
+      }
+    }
   }
 }

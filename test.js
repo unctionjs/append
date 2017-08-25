@@ -8,3 +8,15 @@ test(({same, end}) => {
 
   end()
 })
+
+test(({same, end}) => {
+  same(append("c")("ab"), "abc")
+
+  end()
+})
+
+test(({throws, end}) => {
+  throws(() => append("c")({}))
+
+  end()
+})
