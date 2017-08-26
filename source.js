@@ -3,7 +3,7 @@
 import type from "@unction/type"
 
 export default function append (value: any): Function {
-  return function appendLeft (orderedList: any): any {
+  return function appendValue (orderedList: any): any {
     switch (type(orderedList)) {
       case "String": {
         return `${orderedList}${value}`
