@@ -57,7 +57,7 @@
     "instrument": false
   },
   "dependencies": {
-    "@unction/type": "2.6.0"
+    "@unction/type": "2.8.0"
   },
   "files": [
     "transpiled/index.js"
