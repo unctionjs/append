@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> mixed -> (ArrayType | string) -> (ArrayType | string)
+> mixed => (ArrayType | string) => (ArrayType | string)
 
 Takes a value and puts it at the end of the given list.
 
