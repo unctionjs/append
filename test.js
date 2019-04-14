@@ -1,22 +1,22 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
+import {test} from "tap";
 
-import append from "./index"
-
-test(({same, end}) => {
-  same(append("a")(["b"]), ["b", "a"])
-
-  end()
-})
+import append from "./index";
 
 test(({same, end}) => {
-  same(append("c")("ab"), "abc")
+  same(append("a")(["b"]), ["b", "a"]);
 
-  end()
-})
+  end();
+});
+
+test(({same, end}) => {
+  same(append("c")("ab"), "abc");
+
+  end();
+});
 
 test(({throws, end}) => {
-  throws(() => append("c")({}))
+  throws(() => append("c")({}));
 
-  end()
-})
+  end();
+});
