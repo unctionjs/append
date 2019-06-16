@@ -58,8 +58,7 @@
     "instrument": false
   },
   "dependencies": {
-    "@unction/type": "4.2.0",
-    "core-js": "3.0.1"
+    "@unction/type": "4.2.0"
   },
   "files": [
     "index.js",
