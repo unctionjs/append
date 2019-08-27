@@ -1,7 +1,7 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 
-import append from "./index";
+import append from "./";
 
 test(({same, end}) => {
   same(append("a")(["b"]), ["b", "a"]);
