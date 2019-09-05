@@ -4,10 +4,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> mixed => (ArrayType | string) => (ArrayType | string)
+> A => OrderedEnumerableType<B> => OrderedEnumerableType<C>
 
 Takes a value and puts it at the end of the given list.
-
 
 ``` javascript
 append(4)([5]) // => [5, 4]
