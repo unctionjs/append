@@ -1,14 +1,14 @@
 
 import append from "./index";
 
-test(() => {
+test("works", () => {
   expect(append("a")(["b"])).toEqual(["b", "a"]);
 });
 
-test(() => {
+test("works", () => {
   expect(append("c")("ab")).toEqual("abc");
 });
 
-test(() => {
+test("works", () => {
   expect(() => append("c")({})).toThrow();
 });
