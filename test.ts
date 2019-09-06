@@ -1,5 +1,5 @@
 
-import append from "./index.ts";
+import append from "./index";
 
 test(() => {
   expect(append("a")(["b"])).toEqual(["b", "a"]);
