@@ -1,6 +1,6 @@
 {
   "name": "@unction/append",
-  "version": "6.10.0",
+  "version": "6.10.1",
   "description": "Takes a value and puts it at the end of the given list",
   "keywords": [
     "unction",
